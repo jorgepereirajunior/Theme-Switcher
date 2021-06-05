@@ -1,5 +1,6 @@
-import React, { FC, useState } from 'react';
+import React, { FC } from 'react';
 import { ThemeProvider } from 'styled-components'
+import usePersistedState from './hooks/usePersistedState'
 
 import GlobalStyle from './styles/global'
 import light from './styles/themes/light'
@@ -8,7 +9,7 @@ import dark from './styles/themes/dark'
 import { Main } from './pages/Main'
 
 const App: FC = () => {
-  const [theme, setTheme] = useState(light)
+  const [theme, setTheme] = usePersistedState('theme', light)
 
   function toggleTheme() {
     setTheme(theme.name === 'light' ? dark : light)
