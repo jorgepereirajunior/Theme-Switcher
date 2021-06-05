@@ -14,8 +14,11 @@ export const Main:FC = () => {
             checked
             onChange={() => {}}
             checkedIcon={false}
-            size={20}
-            
+            uncheckedIcon={false}
+            height={10}
+            width={35}
+            handleDiameter={15}
+            onHandleColor={'#ac0000'}
           />
         </Box>
       </Body>
