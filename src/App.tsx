@@ -1,9 +1,11 @@
 import React, { FC } from 'react';
 
+import { Header } from './components/header'
+
 const App: FC = () => {
   return (
     <div className="App">
-      <h1>Theme Switcher</h1>
+      <Header>Theme Switcher</Header>
     </div>
   )
 }
