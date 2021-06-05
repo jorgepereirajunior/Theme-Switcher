@@ -4,8 +4,8 @@ export default {
 
    colors: {
      primary: '#ff6347',
-     secondary: '#7159c1',
 
+     switch: '#ff6347',
      title: '#ffffee',
      background: '#f5f5f0'
    }

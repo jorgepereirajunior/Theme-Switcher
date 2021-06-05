@@ -24,7 +24,7 @@ export const Box = styled.div`
   width: 28%;
   height: 38%;
 
-  background-color: #FFF;
+  background-color: ${props => props.theme.colors.background};
 
   box-shadow: 1px 1px 20px rgba(0,0,0,0.2);
 `
